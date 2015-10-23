@@ -6,4 +6,9 @@
   <p class="price">
     <%= number_to_currency product.price %>
   </p>
+  <% if product.category %>
+  <p>
+    <strong>Category: <%= product.category.name %></strong>
+  </p>
+  <% end %>
 </section>
